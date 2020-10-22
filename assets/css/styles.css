@@ -1,7 +1,7 @@
 .fade-in {
     z-index: -1;
     position: relative;
-    animation: fadeIn;
+    animation-name: fadeIn;
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
@@ -17,6 +17,24 @@
         opacity: 1;
     }
 }
+.fade-out {
+    z-index: -1;
+    position: relative;
+    animation: fadeOut 10s infinite;
+    
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 
 
 /*in order to use z-index, you have to declare a position on the item*/
@@ -54,7 +72,6 @@ h1 {
     letter-spacing: 10px;
     margin: 30px;
     padding: 30px;
-    z-index: 1;
 }
 
 p {
@@ -69,15 +86,14 @@ p {
     text-align: center;
     margin: 180px;
     padding: 180px;
-    z-index: 1;
 }
 
 a:link,
 a:visited {
     background-color: floralwhite;
     color: black;
-    padding: 14px 25px;
-    border-radius: 10px;
+    padding: 20px 30px;
+    border-radius: 12px;
     cursor: pointer;
 }
 
